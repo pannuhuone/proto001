@@ -18,3 +18,16 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 
 autopublish             # Publish all data to the clients (for prototyping)
 insecure                # Allow all DB writes from clients (for prototyping)
+accounts-password
+accounts-google
+service-configuration
+twbs:bootstrap
+zimme:active-route
+useraccounts:iron-routing
+logging
+reload
+random
+ejson
+spacebars
+check
+useraccounts:bootstrap
