@@ -15,13 +15,18 @@
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-8">
-          <ul class="nav navbar-nav">
-            <li class="{{isActiveRoute regex='home'}}"><a href="{{pathFor 'home'}}">Home</a></li>
-            <li class="{{isActiveRoute regex='private'}}"><a href="{{pathFor 'private'}}">Private</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            {{> atNavButton}}
-          </ul>
+            <ul class="nav navbar-nav">
+                <li class="{{isActiveRoute regex='home'}}"><a href="{{pathFor 'home'}}">Home</a></li>
+                <li class="{{isActiveRoute regex='private'}}"><a href="{{pathFor 'private'}}">Private</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                {{#if currentUser}}
+                    <li><a href="/sign-out">Log out</a></li>
+                {{else}}
+                    <li><a href="/sign-in">Log in</a></li>
+                    <li><a href="/sign-up">Sign up</a></li>
+                {{/if}}
+            </ul>
         </div>
       </div>
     </div>
